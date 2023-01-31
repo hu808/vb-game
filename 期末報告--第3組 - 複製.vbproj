@@ -1,0 +1,538 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7292FD4D-AA81-48AA-A405-E7773E347085}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>期末報告.My.MyApplication</StartupObject>
+    <RootNamespace>期末報告</RootNamespace>
+    <AssemblyName>期末報告--第3組</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>期末報告--第3組.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>期末報告--第3組.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gipuly.designer.vb">
+      <DependentUpon>Gipuly.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gipuly.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gipuly2.designer.vb">
+      <DependentUpon>Gipuly2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gipuly2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="初始.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="初始.Designer.vb">
+      <DependentUpon>初始.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="找找波妞1.designer.vb">
+      <DependentUpon>找找波妞1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="找找波妞1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="找找波妞2.designer.vb">
+      <DependentUpon>找找波妞2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="找找波妞2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="接物開始.Designer.vb">
+      <DependentUpon>接物開始.vb</DependentUpon>
+    </Compile>
+    <Compile Include="接物開始.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="接物.Designer.vb">
+      <DependentUpon>接物.vb</DependentUpon>
+    </Compile>
+    <Compile Include="接物.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.vb">
+      <DependentUpon>Form4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5.Designer.vb">
+      <DependentUpon>Form5.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form5.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="打地鼠.Designer.vb">
+      <DependentUpon>打地鼠.vb</DependentUpon>
+    </Compile>
+    <Compile Include="打地鼠.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Form2.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gipuly.resx">
+      <DependentUpon>Gipuly.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gipuly2.resx">
+      <DependentUpon>Gipuly2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="初始.resx">
+      <DependentUpon>初始.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="找找波妞1.resx">
+      <DependentUpon>找找波妞1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="找找波妞2.resx">
+      <DependentUpon>找找波妞2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="接物.resx">
+      <DependentUpon>接物.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="打地鼠.resx">
+      <DependentUpon>打地鼠.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="接物開始.resx">
+      <DependentUpon>接物開始.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\千.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\龍.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\波.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\波妞.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\波妞.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\龍貓.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\信件1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\魔女背景首頁.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\魔女遊戲背景.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\魔女人物.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\魔女反.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\信封.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\黑函.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\112.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\113.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aaa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bbb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\winner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\w1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20151216-033648_U3927_M111410_5928.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1381075337-3584610427.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\water.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\下載 %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\音符.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\音符禁止.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1381075337-35846104271.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\water1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\音符1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\音符禁止1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\崖上の波妞 - Yuling %28online-audio-converter.com%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bubble.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\colorback.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fatcat.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\score.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\time.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_千01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_千01.1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_千02.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_千02.1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_千03.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_千03.1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_千04.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_千04.1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_千05.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_千05.1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_千06.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_千06.1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_千07.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_千07.1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_千08.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_千08.1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_千09.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_千09.1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_千10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_千10.1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_千11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_千11.1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_千12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_千12.1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_千13.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_千13.1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_千14.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_千14.1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_千15.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_千15.1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_千16.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_千16.1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_千17.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_千17.1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_千18.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_千18.1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_千19.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_千19.1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_千20.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_千20.1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\千尋.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\已改.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\已改2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\已改3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\已改5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\已改7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\木.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\未改.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\未改2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\未改3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\未改5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\未改7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\背景.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\背景圖.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.wav" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
